@@ -1,0 +1,13 @@
+{
+  "HHV_kWhm3": { "min": 10.28, "max": 12.75 },
+  "LHV_kWhm3": { "min": 9.25, "max": 11.47 },
+  "Wobbe_HHV_kWhm3": { "min": 12.75, "max": 15.81 },
+  "Wobbe_LHV_kWhm3": { "min": 11.48, "max": 14.23 },
+  "relative_density": { "min": 0.56, "max": 0.70 },
+  "CO2_mol_pct": { "max": 2.5 },
+  "N2_mol_pct": { "max": 7.0 },
+  "O2_mol_pct": { "max": 0.001 },
+  "total_sulfur_mg_m3": { "max": 30 },
+  "H2S_COS_mg_m3": { "max": 5 },
+  "RSH_mg_m3": { "max": 6 }
+}
