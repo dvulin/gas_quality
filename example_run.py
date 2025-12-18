@@ -14,12 +14,14 @@ from core.mixing_rules import calc_mixture_molar_mass, calc_relative_density, no
 from calc.heating_value import mixture_HHV_LHV_MJm3, MJm3_to_kWhm3
 from calc.wobbe import wobbe_index
 from calc.methane_number import estimate_methane_number
-from calc.mn import estimate_methane_number
+
 from calc.gas_quality_checks import (
     check_composition_limits,
     check_energy_and_wobbe,
     check_methane_number,
 )
+
+import Table_A_10_Additional_numerical_examples_for_software_validation_purposes as exampleAVL
 
 import os
 
@@ -28,15 +30,7 @@ import os
 # 1. Validate and normalize input
 validate_natural_gas_data(natural_gas_data)
 composition = normalize_composition(natural_gas_data["composition"])
-compositionMN = {
-    'CH4': 0.8353, 
-    'C2H6': 0.0347,
-    'C3H8': 0.0,
-    'C4H10': 0.0,  
-    'N2': 0.13,
-    'CO2': 0.0,
-    'H2': 0.0
-}
+compositionMN = exampleAVL.mix1
 
 
 molecular_weights = get_molecular_weights(natural_gas_data)
